@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: docker-go
+    image: docker_go
+    ports:
+      - "8080:8080"
